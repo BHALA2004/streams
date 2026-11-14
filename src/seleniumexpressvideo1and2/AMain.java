@@ -4,7 +4,7 @@ import java.util.function.Consumer;
 import java.util.function.Supplier;
 import java.util.stream.Stream;
 
-public class Main {
+public class AMain {
     public static void main(String[] args) {
 
        /* Stream -> Water Stream Real Life Analogy

@@ -2,7 +2,7 @@ package seleniumexpressvideo1and2;
 
 import java.util.stream.Stream;
 
-public class Lambda {
+public class BLambda {
     public static void main(String[] args) {
 
 //        How to use Lambda Function ->

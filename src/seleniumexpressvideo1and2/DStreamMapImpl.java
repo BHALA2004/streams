@@ -3,7 +3,7 @@ package seleniumexpressvideo1and2;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class StreamMapImpl {
+public class DStreamMapImpl {
     public static void main(String[] args) {
 
 
