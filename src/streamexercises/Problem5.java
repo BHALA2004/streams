@@ -1,5 +1,6 @@
 package streamexercises;
 
+import java.util.Comparator;
 import java.util.List;
 
 public class Problem5 {
@@ -8,7 +9,7 @@ public class Problem5 {
         int m = numbers.stream()
                 .max((x,y)-> x > y ? 1 : -1).get();
 
-        int  n = numbers.stream().max(Integer::max).get();
+        int  n = numbers.stream().max(Integer::compare).get();
         System.out.println(m + " " + n);
     }
 }
