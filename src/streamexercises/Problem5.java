@@ -9,7 +9,11 @@ public class Problem5 {
         int m = numbers.stream()
                 .max((x,y)-> x > y ? 1 : -1).get();
 
-        int  n = numbers.stream().max(Integer::compare).get();
+        Comparator<Integer> compare = Integer::compare;
+
+        int  n = numbers.stream().max(compare).get();
         System.out.println(m + " " + n);
+
+
     }
 }
