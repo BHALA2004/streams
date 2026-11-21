@@ -28,6 +28,18 @@ public class MinMaxBySummingInt {
         Long collect4 = list.stream().collect(Collectors.counting());
         System.out.println(collect4);
 
+        Comparator<Integer> comparator = Integer::compare;
+        List<Integer> list3 = list.stream().sorted(comparator.reversed()).toList();
+        System.out.println(list3);
+
+        Comparator<Integer> compare =  (x,y) -> x < y ? 1 : (x == y ? 0 : -1);;
+        List<Integer> integerList = list.stream().sorted(compare).toList();
+        System.out.println(integerList);
+
+
+        List<Integer> list1 = list.stream().sorted(Comparator.reverseOrder()).toList();
+        System.out.println(list1);
+
 
     }
 }
