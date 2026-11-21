@@ -13,8 +13,11 @@ public class MinMaxBySummingInt {
         Optional<Integer> collect = list.stream().collect(Collectors.minBy(Comparator.comparingInt(Integer::intValue)));
         System.out.println(collect.get());
 
-        Optional<Integer> collect1 = list.stream().collect(Collectors.maxBy(Comparator.comparingInt(Integer::intValue)));
+        Optional<Integer> collect1 = list.stream().collect(Collectors.maxBy(Integer::compare));
         System.out.println(collect1.get());
+
+        Optional<Integer> collect5 = list.stream().max(Integer::compare);
+        System.out.println(collect5.get());
 
         Integer collect2 = list.stream().collect(Collectors.summingInt(n -> n));
         System.out.println(collect2);
